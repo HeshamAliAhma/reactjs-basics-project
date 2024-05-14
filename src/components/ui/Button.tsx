@@ -8,11 +8,11 @@ interface Iprops {
   ref?: MutableRefObject<null>;
 }
 
-const Button = ({ children, className, width = "w-full", ...rest }: Iprops) => {
+const Button = ({ children, className, width = "w-full", ... rest }: Iprops) => {
   return (
     <button
       className={`${className} ${width} rounded-md px-4 py-2 text-white`}
-      {...rest}
+      {... rest}
     >
       {children}
     </button>
